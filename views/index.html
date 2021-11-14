@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>增強學習人工智慧實驗</title>
+
+    <link rel="stylesheet" href="index.css" />
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">.
+
+</head>
+<body oncontextmenu="window.event.returnValue=false;">
+  <canvas id="main" width="1920" height="1080" style="height: 80vh;width:80vw;position:absolute;top: 0px;"></canvas>
+  <canvas id="weightImg" width="400" height="150" style="height: 150px;width:400px;position:absolute;top:80vh;"></canvas>
+
+  <canvas id="obs_map" width="1920" height="1080" style="display: none;"></canvas>
+  <div style="display:none">
+    <img src="views/img/System_Background.jpg" id="system_Background">
+    <img src="views/img/Background.jpg" id="background">
+    <img src="views/img/car.png" id="car_img">
+  </div>
+  <script src="scripts/Eniroment.js"></script>
+  <script src="scripts/NerualNetwork.js"></script>
+  <script src="scripts/Draw.js"></script>
+  <script src="scripts/Input.js"></script>
+  <script src="scripts/Game.js"></script>
+
+</body>
+</html>
